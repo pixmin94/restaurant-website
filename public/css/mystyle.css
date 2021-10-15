@@ -1,0 +1,57 @@
+.mystyle{
+	height: 90px;
+	width: 254px;
+	color: white;
+	font-size: smaller;
+}
+.flip-container{
+	perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper{
+	transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back{
+	height: 100px;
+	width: 254px;
+}
+.flipper{
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+footer{
+    background: #aaa;
+    color: white;
+}
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+
+/* navbar
+.navbar-default {
+    background-color: #E18B22;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+.li {
+display: inline;
+} */
